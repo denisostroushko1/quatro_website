@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-/data 
-        # << ensures that no data files are being uploaded into the pblic repo on git 
-        # more clearly, any folders that "branch out" from the location named "data" will be pushed to git 
+/data
+# << ensures that no data files are being uploaded into the pblic repo on git
+# more clearly, any folders that "branch out" from the location named "data" will be pushed to git
+/.quarto/
