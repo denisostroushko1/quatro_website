@@ -11,7 +11,7 @@ about:
   links:
     - icon: linkedin
       href: https://www.linkedin.com/in/denis-ostroushko/
-  #  - text: RPubs
+  #  - text: RPubsm
   #    href: 
     - icon: github
       href: https://github.com/denisostroushko1
@@ -21,18 +21,47 @@ about:
       href: mailto:ostro233@umn.edu
 
 website:
+  page-navigation: true
   title: "Denis Ostroushko"
   site-url: https://denis_ostroushko.dev
   navbar:
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - href: index.qmd 
-        text: Resume
-      - href: index.qmd 
-        text: Writing 
-      - href: index.qmd
-        text: ShinyApps
+      - text: Home
+        href: index.qmd
+      - sidebar:resume
+      - sidebar:writing
+      - sidebar:shinyapps
+
+  sidebar:
+  - id: resume
+    title: "Resume"
+    style: "docked"
+    background: light
+    collapse-level: 2
+    contents:
+      - text: Resume
+        href: CV_Graduate_Admissions_2021 (1).pdf
+      - text: Academic CV
+        href: CV_Graduate_Admissions_2021 (1).pdf
+  - id: shinyapps
+    title: "Software and Dashboards"
+    style: "docked"
+    background: light
+    collapse-level: 2
+    contents: 
+      - text: Financial Data Analysis
+        href: https://coingalaxy.shinyapps.io/sample_risk_dashboard/
+      - text: Financial Decisions example - Coming Soon 
+        href: https://coingalaxy.shinyapps.io/sample_risk_dashboard/
+  - id: writing
+    title: "Wrtiing"
+    style: "docked"
+    background: light
+    collapse-level: 2
+    contents: 
+      - text: Gaussian Regression Guide
+        href: https://github.com/denisostroushko1/articles/blob/main/02%20Normal%20Error%20Regression%20Model/Regression_main.pdf
       
 format:
   html:
